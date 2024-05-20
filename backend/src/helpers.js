@@ -34,6 +34,7 @@ exports.timeRange = (start, end, format, interval) => {
   if (interval == undefined) {
     interval = 60;
   }
+  
   interval = interval > 0 ? interval : 60;
 
   const range = [];

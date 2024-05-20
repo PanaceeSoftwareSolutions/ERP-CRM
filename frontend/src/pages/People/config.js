@@ -27,9 +27,9 @@ export const fields = {
   phone: {
     type: 'phone',
   },
-  no_of_People: {
-    type: 'number', 
-  },
+  // no_of_People: {
+  //   type: 'number', 
+  // },
   email: {
     type: 'email',
   },
