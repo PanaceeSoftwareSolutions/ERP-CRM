@@ -21,6 +21,12 @@ export const fields = {
   description: {
     type: 'textarea',
   },
+  Hotel: {
+    type: 'text',
+  },
+  Hotel: {
+    type: 'text',
+  },
   ref: {
     type: 'string',
   },

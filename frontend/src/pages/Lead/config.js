@@ -9,10 +9,12 @@ export const fields = {
     ],
     required: true,
     hasFeedback: true,
+    disableForTable: true
   },
   name: {
     type: 'string',
     disableForForm: true,
+
   },
   status: {
     type: 'selectWithTranslation',
@@ -66,6 +68,7 @@ export const fields = {
     type: 'country',
     color: null,
     disableForForm: true,
+    disableForTable: true
   },
   phone: {
     type: 'phone',
@@ -74,18 +77,20 @@ export const fields = {
   email: {
     type: 'email',
     disableForForm: false,
+    disableForTable: true
   },
   Tour_date: {
     type: 'date',
     disableForForm: false,
   },
-  no_of_Pax: {
+  Pax: {
     type: 'number',
     disableForForm: false,
   },
   nights: {
     type: 'number',
     disableForForm: false,
+    disableForTable: true
   },
   people: {
     type: 'search',

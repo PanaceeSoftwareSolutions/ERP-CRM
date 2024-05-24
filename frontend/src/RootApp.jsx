@@ -14,7 +14,7 @@ export default function RoutApp() {
       <Provider store={store}>
         <Suspense fallback={<PageLoader />}>
           <IdurarOs />
-        </Suspense>
+        </Suspense> 
       </Provider>
     </BrowserRouter>
   );

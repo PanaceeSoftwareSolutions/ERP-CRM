@@ -20,12 +20,14 @@ const schema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
+
   },
   description: String,
   number: {
     type: Number,
   },
   title: String,
+
   tags: [String],
   headerImage: String,
   photo: String,
@@ -56,12 +58,20 @@ const schema = new mongoose.Schema({
   priceBeforeTax: {
     type: Number,
   },
-  taxRate: { type: Number, default: 0 },
+  taxRate: {
+    type: Number,
+    default: 0
+  },
   price: {
     type: Number,
     required: true,
   },
   currency: {
+    type: String,
+    uppercase: true,
+    required: true,
+  },
+  Hotel: {
     type: String,
     uppercase: true,
     required: true,
