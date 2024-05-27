@@ -17,7 +17,9 @@ const schema = new mongoose.Schema({
     autopopulate: true,
   },
   suppliers: [{ type: mongoose.Schema.ObjectId, ref: 'Supplier' }],
-  name: {
+
+  
+  Package_Name: {
     type: String,
     required: true,
 
@@ -55,12 +57,42 @@ const schema = new mongoose.Schema({
       },
     },
   ],
+
+
   priceBeforeTax: {
     type: Number,
   },
+  Discount: {
+    type: Number,
+  },
+
+  "% per Adult": {
+    type: Number,
+  },
+
+  '% per Child': {
+    type: Number,
+  },
+  Margin: {
+    type: Number,
+  },
+  Package_Code: {
+    type: Number,
+  },
+
   taxRate: {
     type: Number,
     default: 0
+  },
+  ref: {
+    type: String,
+
+  },
+  Overview: {
+    type: String,
+  },
+  Destination: {
+    type: String,
   },
   price: {
     type: Number,
@@ -73,7 +105,7 @@ const schema = new mongoose.Schema({
   },
   Hotel: {
     type: String,
-    uppercase: true,
+    // uppercase: true,
     required: true,
   },
   customField: [

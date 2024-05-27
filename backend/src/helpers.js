@@ -48,7 +48,7 @@ exports.timeRange = (start, end, format, interval) => {
 
 
 
-cons
+
 
 exports.calculate = {
   add: (firstValue, secondValue) => {

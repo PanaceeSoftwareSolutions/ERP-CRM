@@ -1,5 +1,5 @@
 export const fields = {
-  name: {
+  Package_Name: {
     type: 'string',
     required: true,
   },
@@ -11,6 +11,9 @@ export const fields = {
     entity: 'productcategory',
     required: true,
   },
+  Package_Code: {
+    type: 'number',
+  },
   currency: {
     type: 'selectCurrency',
   },
@@ -18,11 +21,28 @@ export const fields = {
     type: 'currency',
     required: true,
   },
-  description: {
+  Destination: {
+    type: 'string',
+    required: true,
+  },
+  Overview: {
     type: 'textarea',
   },
   Hotel: {
     type: 'text',
+  },
+  "% per Adult": {
+    type: 'number',
+  },
+  "% per Child": {
+    type: 'number',
+  },
+  Discount: {
+    type: 'number',
+  },
+
+  Margin: {
+    type: 'number',
   },
   Hotel: {
     type: 'text',

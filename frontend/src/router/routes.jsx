@@ -1,3 +1,7 @@
+import Attractions from '@/pages/Attractions';
+import Hotel from '@/pages/Hotel';
+import Prospects from '@/pages/Hotel';
+
 import { lazy } from 'react';
 
 import { Navigate } from 'react-router-dom';
@@ -11,7 +15,6 @@ const Inventory = lazy(() => import('@/pages/Inventory'));
 const Order = lazy(() => import('@/pages/Order'));
 const Invoice = lazy(() => import('@/pages/Invoice'));
 const InvoiceCreate = lazy(() => import('@/pages/Invoice/InvoiceCreate'));
-
 const InvoiceRead = lazy(() => import('@/pages/Invoice/InvoiceRead'));
 const InvoiceUpdate = lazy(() => import('@/pages/Invoice/InvoiceUpdate'));
 const InvoiceRecordPayment = lazy(() => import('@/pages/Invoice/InvoiceRecordPayment'));
@@ -89,6 +92,10 @@ let routes = {
       element: <Company />,
     },
     {
+      path: '/hotel',
+      element: <Hotel />,
+    },
+    {
       path: '/product',
       element: <Product />,
     },
@@ -103,6 +110,11 @@ let routes = {
     {
       path: '/order',
       element: <Order />,
+    },
+
+    {
+      path: '/attractions',
+      element: <Attractions />,
     },
     {
       path: '/invoice',

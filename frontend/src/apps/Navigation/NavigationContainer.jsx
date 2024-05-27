@@ -61,6 +61,7 @@ function Sidebar({ collapsible, isMobile = false }) {
       icon: <FilterOutlined />,
       label: <Link to={'/lead'}>{translate('leads')}</Link>,
     },
+
     {
       key: 'customer',
       icon: <CustomerServiceOutlined />,
@@ -101,6 +102,16 @@ function Sidebar({ collapsible, isMobile = false }) {
       key: 'product',
       icon: <TagOutlined />,
       label: <Link to={'/product'}>{translate('products')}</Link>,
+    },
+    {
+      key: 'hotel',
+      icon: <TagOutlined />,
+      label: <Link to={'/hotel'}>{translate('hotel')}</Link>,
+    },
+    {
+      key: 'Attractions',
+      icon: <TagOutlined />,
+      label: <Link to={'/attractions'}>{translate('Attractions')}</Link>,
     },
     {
       key: 'categoryproduct',
