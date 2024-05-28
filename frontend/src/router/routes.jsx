@@ -1,5 +1,5 @@
 import Attractions from '@/pages/Attractions';
-import Hotel from '@/pages/Hotel';
+
 import Prospects from '@/pages/Hotel';
 
 import { lazy } from 'react';
@@ -36,6 +36,12 @@ const EmailUpdate = lazy(() => import('@/pages/Email/EmailUpdate'));
 const AdvancedSettings = lazy(() => import('@/pages/AdvancedSettings'));
 const Profile = lazy(() => import('@/pages/Profile'));
 const Lead = lazy(() => import('@/pages/Lead/index'));
+
+
+
+
+
+
 const Offer = lazy(() => import('@/pages/Offer/index'));
 const OfferCreate = lazy(() => import('@/pages/Offer/OfferCreate'));
 const OfferRead = lazy(() => import('@/pages/Offer/OfferRead'));
@@ -48,6 +54,7 @@ const Product = lazy(() => import('@/pages/Product'));
 
 const People = lazy(() => import('@/pages/People'));
 const Company = lazy(() => import('@/pages/Company'));
+const Hotel = lazy(() => import('@/pages/Hotel'));
 
 const About = lazy(() => import('@/pages/About'));
 const Currency = lazy(() => import('@/pages/Currency'));

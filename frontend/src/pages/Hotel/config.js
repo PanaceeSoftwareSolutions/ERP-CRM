@@ -10,10 +10,12 @@ export const fields = {
   //   required: true,
   //   hasFeedback: true,
   // },
+
   id: {
-    type: 'string',
+    type: 'number',
     disableForForm: false,
   },
+
   // code: {
   //   type: 'string',
   //   disableForForm: false,
@@ -31,7 +33,7 @@ export const fields = {
 
 
   Rating: {
-    type: 'string',
+    type: 'number',
     disableForForm: false,
   },
   check_IN:{
@@ -46,10 +48,10 @@ export const fields = {
     type: 'email',
     disableForForm: false,
   },
-  contact: {
-    type: 'number',
-    disableForForm: false,
-  },
+  // contact: {
+  //   type: 'number',
+  //   disableForForm: false,
+  // },
   // status: {
   //   type: 'selectWithTranslation',
   //   renderAsTag: true,
@@ -97,7 +99,7 @@ export const fields = {
   //   disableForForm: false,
   // },
   phone: {
-    type: 'phone',
+    type: 'number',
     disableForForm: false,
   },
 

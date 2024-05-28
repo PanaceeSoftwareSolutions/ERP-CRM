@@ -52,16 +52,29 @@ export const fields = {
     ],
   },
 
-  assign_to: {
-    type: 'selectWithTranslation',
+  // assign_to: {
+  //   type: 'selectWithTranslation',
+  //   renderAsTag: true,
+  //   options: [
+  //     { value: 'employee', label: 'employee', color: selectColor.royalblue },
+  //     { value: 'super_admin', label: 'super_admin', color: selectColor.firebrick },
+  //     { value: 'manager', label: 'manager', color: selectColor.skyblue },
+  //     { value: 'read_only', label: 'read_only', color: selectColor.coral },
+  //     { value: 'edit_only', label: 'edit_only', color: selectColor.darkgreen },
+  //   ],
+  // },
+
+  assigned: {
+    type: 'search',
+    entity: 'admin',
+    label: 'assigned',
     renderAsTag: true,
-    options: [
-      { value: 'employee', label: 'employee', color: selectColor.royalblue },
-      { value: 'super_admin', label: 'super_admin', color: selectColor.firebrick },
-      { value: 'manager', label: 'manager', color: selectColor.skyblue },
-      { value: 'read_only', label: 'read_only', color: selectColor.coral },
-      { value: 'edit_only', label: 'edit_only', color: selectColor.darkgreen },
-    ],
+    redirectLabel: 'Add New admin',
+    withRedirect: true,
+    urlToRedirect: '/admin',
+    displayLabels: ['name'],
+    searchFields: 'name',
+    dataIndex: ['admin', 'name'],
   },
 
   country: {
@@ -79,10 +92,10 @@ export const fields = {
     disableForForm: false,
     disableForTable: true
   },
-  Tour_date: {
-    type: 'date',
-    disableForForm: false,
-  },
+  // Tour_date: {
+  //   type: 'date',
+  //   disableForForm: false,
+  // },
   Pax: {
     type: 'number',
     disableForForm: false,

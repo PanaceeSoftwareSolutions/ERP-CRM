@@ -29,7 +29,8 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(compression());
+app.use(compression()); 
+
 
 // // default options
 // app.use(fileUpload());

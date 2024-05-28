@@ -78,7 +78,7 @@ const schema = new mongoose.Schema({
   source: String,
 
   user_type: String,
-  assign_to: String,
+  // assign_to: String,
 
   approved: {
     type: Boolean,

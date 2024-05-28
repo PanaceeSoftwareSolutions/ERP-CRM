@@ -43,6 +43,11 @@ const schema = new mongoose.Schema({
   // subTotal: {
   //   type: Number,
   // },
+
+
+
+
+
   taxTotal: {
     type: Number,
   },
@@ -53,6 +58,9 @@ const schema = new mongoose.Schema({
     type: Number,
   },
   phone: {
+    type: Number,
+  },
+  Rating: {
     type: Number,
   },
   Budget: {

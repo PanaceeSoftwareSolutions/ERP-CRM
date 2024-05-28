@@ -19,6 +19,7 @@ const paginatedList = async (Model, req, res) => {
   }
 
   //  Query the database for a list of all results
+  
   const resultsPromise = Model.find({
     removed: false,
 
@@ -46,6 +47,7 @@ const paginatedList = async (Model, req, res) => {
   const pages = Math.ceil(count / limit);
 
   const pagination = { page, pages, count };
+
   if (count > 0) {
     const migratedData = result.map((x) => migrate(x));
     // console.log('🚀 ~ file: paginatedList.js:23 ~ paginatedList ~ migratedData:', migratedData);
