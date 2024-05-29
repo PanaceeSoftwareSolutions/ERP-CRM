@@ -11,12 +11,12 @@ const schema = new mongoose.Schema({
     default: true,
   },
 
-  type: {
-    type: String,
-    default: 'company',
-    enum: ['company', 'people'],
-    // required: true,
-  },
+  // type: {
+  //   type: String,
+  //   default: 'company',
+  //   enum: ['company', 'people'],
+  //   // required: true,
+  // },
   name: {
     type: String,
     // required: true,
@@ -25,10 +25,10 @@ const schema = new mongoose.Schema({
     type: Number,
     // required: true,
   },
-  code: {
-    type: Number,
-    // required: true,
-  },
+  // code: {
+  //   type: Number,
+  //   // required: true,
+  // },
   email: {
     type: String,
     // required: true,
@@ -48,27 +48,27 @@ const schema = new mongoose.Schema({
 
 
 
-  taxTotal: {
-    type: Number,
-  },
+  // taxTotal: {
+  //   type: Number,
+  // },
   // contact: {
   //   type: Number,
   // },
-  total: {
-    type: Number,
-  },
+  // total: {
+  //   type: Number,
+  // },
   phone: {
     type: Number,
   },
   Rating: {
     type: Number,
   },
-  Budget: {
-    type: Number,
-  },
-  discount: {
-    type: Number,
-  },
+  // Budget: {
+  //   type: Number,
+  // },
+  // discount: {
+  //   type: Number,
+  // },
   images: [
     {
       id: String,
@@ -96,6 +96,7 @@ const schema = new mongoose.Schema({
   category: String,
   status: String,
   notes: String,
+  type: String,
   source: String,
   approved: {
     type: Boolean,

@@ -26,7 +26,7 @@ const schema = new mongoose.Schema({
   offer: [{ type: mongoose.Schema.ObjectId, ref: 'Offer' }],
   converted: { type: Boolean, default: false },
   createdBy: { type: mongoose.Schema.ObjectId, ref: 'Admin' },
-  assigned: { type: mongoose.Schema.ObjectId, ref: 'Admin' },
+  assigned: { type: mongoose.Schema.ObjectId, ref: 'Admin', autopopulate: true },
   subTotal: {
     type: Number,
   },
@@ -45,7 +45,7 @@ const schema = new mongoose.Schema({
   discount: {
     type: Number,
   },
-  no_of_Pax: {
+  Pax: {
     type: Number,
   },
   images: [
@@ -84,7 +84,7 @@ const schema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
-  
+
   tags: [
     {
       type: String,

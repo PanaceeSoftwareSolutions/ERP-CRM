@@ -26,8 +26,15 @@ export const fields = {
     disableForForm: false,
   },
   type: {
-    type: 'string',
-    disableForForm: false,
+    type: 'selectWithTranslation',
+      renderAsTag: true,
+      options: [
+   
+        { value: 'Delux', label: 'Delux', color: 'blue' },
+        { value: 'Semi Super Delux', label: 'Semi Super Delux', color: 'purple' },
+        { value: 'Super', label: 'Super', color: 'green' },
+       
+      ],
   },
 
 
@@ -45,7 +52,7 @@ export const fields = {
   },
 
   email: {
-    type: 'email',
+    type: 'string',
     disableForForm: false,
   },
   // contact: {

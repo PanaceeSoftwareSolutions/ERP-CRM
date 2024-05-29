@@ -4,9 +4,9 @@ exports.migrate = (result) => {
   let newData = {};
   newData._id = result._id;
   newData.type = result.type;
-  newData.assign_to = result.assign_to;
+  newData.assigned = result.assigned;
   newData.status = result.status;
-  newData.no_of_Pax = result.no_of_Pax;
+  newData.Pax = result.Pax;
   newData.Tour_date = result.Tour_date;
   newData.nights = result.nights;
   newData.source = result.source;

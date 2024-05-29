@@ -67,14 +67,15 @@ export const fields = {
   assigned: {
     type: 'search',
     entity: 'admin',
-    label: 'assigned',
+    label: 'assign_to',
     renderAsTag: true,
     redirectLabel: 'Add New admin',
     withRedirect: true,
     urlToRedirect: '/admin',
-    displayLabels: ['name'],
+    displayLabels: ['email'],
     searchFields: 'name',
-    dataIndex: ['admin', 'name'],
+    // dataIndex: ['admin', 'name'],
+    dataIndex: ['admin', 'firstname'],
   },
 
   country: {
@@ -98,7 +99,7 @@ export const fields = {
   // },
   Pax: {
     type: 'number',
-    disableForForm: false,
+
   },
   nights: {
     type: 'number',
@@ -115,7 +116,7 @@ export const fields = {
     displayLabels: ['firstname', 'lastname'],
     searchFields: 'firstname,lastname',
     dataIndex: ['people', 'firstname'],
-    disableForTable: true,
+    // disableForTable: true,
     feedback: 'people',
   },
   company: {
